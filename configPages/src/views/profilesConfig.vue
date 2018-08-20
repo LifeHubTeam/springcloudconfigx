@@ -76,8 +76,8 @@
                             </FormItem>
                             <FormItem label="Value：" prop="value">
                                 <Input v-model="formProfileItem.value" type="textarea" :autosize="{minRows: 3,maxRows: 5}" placeholder="Enter something..." />
-                                <P>注意：隐藏字符（空格、换行符、制表符Tab）容易导致配置出错，如需检测Value中的隐藏字符可点击
-                                    <Button type="primary" shape="circle" size="small" v-on:click="checkValue('modify')">检测隐藏字符</Button>
+                                <P>注意：特殊字符（空格、换行符、制表符Tab）容易导致配置出错，如需检测Value中的特殊字符可点击
+                                    <Button type="primary" shape="circle" size="small" v-on:click="checkValue('modify')">检测特殊字符</Button>
                                 </P>
                             </FormItem>
                             <FormItem label="状态：" prop="state">
@@ -105,8 +105,8 @@
                             </FormItem>
                             <FormItem label="Value：" prop="value">
                                 <Input v-model="addAppProfileItem.value" type="textarea" :autosize="{minRows: 3,maxRows: 5}" placeholder="Enter something..." />
-                                <P>注意：隐藏字符（空格、换行符、制表符Tab）容易导致配置出错，如需检测Value中的隐藏字符可点击
-                                    <Button type="primary" shape="circle" size="small" v-on:click="checkValue('add')">检测隐藏字符</Button>
+                                <P>注意：特殊字符（空格、换行符、制表符Tab）容易导致配置出错，如需检测Value中的特殊字符可点击
+                                    <Button type="primary" shape="circle" size="small" v-on:click="checkValue('add')">检测特殊字符</Button>
                                 </P>
                             </FormItem>
                             <FormItem label="状态：" prop="state">
@@ -364,7 +364,7 @@
                 else if (/\t/.test(valueStr))
                     this.$Message.error("含有制表符");
                 else
-                    this.$Message.success("无隐藏字符");
+                    this.$Message.success("无特殊字符");
             }
         },
 
