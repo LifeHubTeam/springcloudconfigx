@@ -12,6 +12,7 @@ File Encoding         : 65001
 
 Date: 2018-08-19 15:58:33
 */
+create database life_config;
 
 SET FOREIGN_KEY_CHECKS=0;
 
