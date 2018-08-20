@@ -4,7 +4,7 @@
   这是spring cloud config相关java代码
 ### 使用说明
 ####  1.数据库初始化
-    使用micro-config\sql\tables.sql初始化相应数据库及表
+    使用micro-config\sql\下面的sql初始化相应数据库及表
 ####  2.修改相应的项目配置
     micro-config\src\main\resources\application.yml
     数据库配置、redis配置、rabbitmq配置、eureka配置
@@ -15,6 +15,18 @@
     
 ## configPages
   这是相应的操作页面
+####  1.用户管理
+![image](https://github.com/LifeHubTeam/springcloudconfigx/raw/master/images/user-list.png)
+
+####  2.应用管理
+![image](https://github.com/LifeHubTeam/springcloudconfigx/raw/master/images/app-list.png)
+
+####  3.配置管理
+![image](https://github.com/LifeHubTeam/springcloudconfigx/raw/master/images/profile-list.png)
+
+####  4.新增配置
+![image](https://github.com/LifeHubTeam/springcloudconfigx/raw/master/images/profile-add.png)
+
 ### This project is build for Vue.js 2 + vue-router + webpack2 + iView 2, just install and run.
 
 #### modify server addrees by src/config/config.js
